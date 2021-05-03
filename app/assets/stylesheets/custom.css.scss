@@ -30,6 +30,13 @@ body {
   object-fit: cover;
 }
 
+.big-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 380px;
+}
+
 .art_link {
   text-decoration: none;
   color: white;

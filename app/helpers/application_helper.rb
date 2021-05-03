@@ -16,7 +16,7 @@ module ApplicationHelper
       # rubocop:disable Style/IdenticalConditionalBranches
       @str += "<li class='nav-item'>"
       # rubocop:enable Style/IdenticalConditionalBranches
-      @str += link_to 'Home', welcome_path, style: 'color: orange; text-decoration: none;'.to_s
+      @str += link_to 'Home', root_path, style: 'color: orange; text-decoration: none;'.to_s
       @str += '</li>'
       @str += "  <li class='nav-item'>"
       @str += "  #{link_to 'Write An Article', new_article_path, style: 'color: grey; text-decoration: none;',
@@ -36,7 +36,7 @@ module ApplicationHelper
       @str += '</li>'
       @str += " <li class='nav-item'>"
       # rubocop:disable Layout/LineLength
-      @str += "  #{link_to('LogOut', '/logout', method: :get,
+      @str += "  #{link_to('LogOut', destroy_user_session_path,
                                                 style: 'color: grey; text-decoration: none; position: absolute; left: 1300px;')}"
       # rubocop:enable Layout/LineLength
       # rubocop:disable Style/IdenticalConditionalBranches
@@ -49,10 +49,10 @@ module ApplicationHelper
       @str += "  <span style='color: grey; font-size: 18px; font-weight: bold;'>Login or Sign Up:<span>"
       @str += '</li>'
       @str += "<li class='nav-item'>"
-      @str += "  #{link_to('Login', '/login', method: :get, style: 'color: navy; text-decoration: none;')}"
+      @str += "  #{link_to('Login',  new_user_session_path, style: 'color: navy; text-decoration: none;')}"
       @str += '</li>'
       @str += "<li class='nav-item'>"
-      @str += "  #{link_to('Sign Up', '/users/new', method: :get, style: 'color: navy; text-decoration: none;')}"
+      @str += "  #{link_to('Sign Up', new_user_registration_path, style: 'color: navy; text-decoration: none;')}"
       # rubocop:disable Style/IdenticalConditionalBranches
       @str += '</li>'
       # rubocop:enable Style/IdenticalConditionalBranches
