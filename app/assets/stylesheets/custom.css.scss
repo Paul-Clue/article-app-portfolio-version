@@ -14,16 +14,6 @@ body {
   font-weight: bold;
 }
 
-//welcome page
-.main_img_div {
-  position: absolute;
-  left: 2px;
-  top: 104px;
-  z-index: 0;
-  height: 56%;
-  width: 100%;
-}
-
 .ctg-img_1 {
   height: 100%;
   width: 100%;
@@ -92,18 +82,27 @@ li {
   margin-right: -80%;
 }
 
+//Index page
+.main_img_div {
+  z-index: 0;
+  height: 30%;
+  width: 100%;
+}
+
 .footer {
   position: fixed;
-  z-index: 4;
+  bottom: 0;
+  z-index: 10;
   left: 0;
-  top: 720px;
   width: 100%;
+  height: 45px;
   color: white;
   text-align: center;
 }
 
-// Welcome page
 .grid-container {
+  z-index: 2;
+  top: 450px;
   width: 100%;
   height: 24%;
   left: 0;
@@ -132,8 +131,8 @@ li {
 
 .welcome_text {
   position: absolute;
-  bottom: -230px;
-  color: blanchedalmond;
+  bottom: 50px;
+  color: whitesmoke;
   font-size: 13px;
   font-weight: bold;
   z-index: 2;
@@ -146,7 +145,8 @@ li {
 .cat_grid {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
+  top: 104px;
   left: 0;
   display: grid;
   grid-template-columns: auto auto auto auto;
@@ -164,7 +164,7 @@ li {
 
 .cat_text {
   color: darkslategray;
-  width: 220px;
+  width: 400px;
   height: 150px;
   z-index: 5;
 }
@@ -192,22 +192,26 @@ li {
 /* The animation code */
 @keyframes example {
   from {
+    height: 50px;
+    top: 100px;
     visibility: visible;
-    color: white;
-    font-size: 70px;
-    left: 200px;
+    color: black;
+    font-size: 15px;
+    left: 0;
   }
 
   to {
-    color: green;
-    font-size: 300px;
-    left: 400px;
+    height: 50px;
+    top: 100px;
+    color: black;
+    font-size: 15px;
+    left: 0;
     visibility: hidden;
   }
 }
 
 /* The element to apply the animation to */
-.notice2 {
+.alert {
   width: 100px;
   height: 100px;
   visibility: hidden;

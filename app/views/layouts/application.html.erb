@@ -34,45 +34,36 @@
 
 <div class="under_nav"></div>
   <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
+  <p class="alert alert-success" style="position: absolute; width: 100%; text-align: center;"><%= notice %></p>
 <% end %>
 <% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
+  <p class="alert alert-danger" style="position: absolute; width: 100%; text-align: center;"><%= alert %></p>
 <% end %>
-<div class="container">
+
 <%= yield %>
-</div>
+
 <!-- Footer -->
-<footer class="footer bg-dark text-white">
-  <!-- Grid container -->
-  <div class="grid-container bg-dark" style=" height: 50px;">
-    <div class="grid-item img foot-img"><img src="/capstone-logo1.png"  width="80px"></div>
+  <footer class="footer bg-dark text-white">
+    <!-- Grid container -->
+    <div class="grid-container bg-dark" style=" height: 50px;">
+      <div class="grid-item img foot-img"><img src="/capstone-logo1.png" width="80px"></div>
 
-    <div class="grid-item copy">
-    
-      © 2020 Copyright:
-      <a class="text-white" href="#">P.Clue</a>
+      <div class="grid-item copy">
+        © 2020 Copyright:
+        <a class="text-white" href="#">P.Clue</a>
       </div>
 
-    <div class="grid-item soc" >
-      <a class="btn  btn-floating m-1" href="#!" role="button"
-        ><span style="color: white;">Contact Us:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa fa-facebook"></i></a>
+      <div class="grid-item soc" >
+        <a class="btn  btn-floating m-1" href="#!" role="button">
+        <span style="color: white;">Contact Us:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i class="fa fa-facebook"></i></a>
 
-      <!-- Twitter -->
-      <a class="btn  btn-floating m-1" href="#!" role="button"
-        ><i class="fa fa-twitter" style="font-size:20px;"></i></a>
-      <!-- Google -->
-      <a class="btn  btn-floating m-1" href="#!" role="button"
-        ><i class="fa fa-instagram"></i></a>
+        <!-- Twitter -->
+        <a class="btn  btn-floating m-1" href="#!" role="button"><i class="fa fa-twitter" style="font-size:20px;"></i></a>
+        <!-- Google -->
+        <a class="btn  btn-floating m-1" href="#!" role="button"><i class="fa fa-instagram"></i></a>
       </div>
-    <!-- Section: Social media -->
-
-    
-    <!-- Copyright -->
-  
-  </div>
-</footer>
-
-
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

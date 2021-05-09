@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 connection = ActiveRecord::Base.connection()
-connection.execute('ALTER SEQUENCE categories_id_seq RESTART WITH 1')
 connection.execute('ALTER SEQUENCE users_id_seq RESTART WITH 1')
+connection.execute('ALTER SEQUENCE categories_id_seq RESTART WITH 1')
 connection.execute('ALTER SEQUENCE articles_id_seq RESTART WITH 1')
 connection.execute('ALTER SEQUENCE votes_id_seq RESTART WITH 1')
 
-User.create(email: 'user@gmail.com', encrypted_password: '123456')
+User.create(email: 'user@gmail.com', password: '123456')
 
 Category.create(name: 'Tesla', priority: 1)
 Category.create(name: 'Ford', priority: 2)
